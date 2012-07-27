@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <title>Etsy Code Crafter</title>
+    <link rel="stylesheet" href="crafter.css" />
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="jquery-ui-1.8.22.custom.min.js"></script>
+    <script src="doT.min.js"></script>
+</head>
+<body>
+
+    <h1>Etsy Code Crafter</h1>
+    <div class="toolbox">
+        <a id="tool-container" class="tool-placable">container</a>
+        <a id="tool-text" class="tool-placable">text</a>
+        <a id="tool-link" class="tool-modifier">link</a>
+        <a id="tool-bold" class="tool-modifier">bold</a>
+        <a id="tool-italic" class="tool-modifier">italic</a>
+        <a id="tool-bigger" class="tool-modifier">bigger</a>
+        <a id="tool-smaller" class="tool-modifier">smaller</a>
+        <a id="tool-class" class="tool-modifier">css class</a>
+        <div class="objects">
+            <h4>Etsy objects:</h4>
+            <a id="add-object"> + 
+                <ul>
+                    <li>Listing <input type="text" id="txtListingId" placeholder="ID" class="api-id" /></li>
+                    <li>Shop <input type="text" id="txtShopId" placeholder="ID" class="api-id" /></li>
+                    <!--<li>User <input type="text" id="txtUserId" placeholder="ID" class="api-id" /></li>-->
+                </ul>
+            </a>
+        </div>
+    </div>
+
+    <div class="container" id="main-container"></div>
+    <div class="height-meter meter">200</div>
+    <div class="width-meter meter">200</div>
+
+    <div class="preview"></div>
+
+</body>
+<script src="crafter.js"></script>
+</html>
